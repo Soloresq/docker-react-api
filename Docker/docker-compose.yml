@@ -1,0 +1,11 @@
+version: "3"
+services:
+  api:
+    build: ../Frontend.Api
+    ports:
+      - 5002:5002
+
+  app:
+    build: ../Frontend.App
+    ports:
+      - 5000:5000
